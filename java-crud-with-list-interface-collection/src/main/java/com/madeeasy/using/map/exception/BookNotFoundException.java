@@ -1,2 +1,11 @@
-package com.madeeasy.using.map.exception;public class BookNotFoundException {
+package com.madeeasy.using.map.exception;
+
+public class BookNotFoundException extends RuntimeException {
+
+    public BookNotFoundException() {
+    }
+
+    public BookNotFoundException(String message) {
+        super(message);
+    }
 }
