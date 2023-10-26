@@ -33,11 +33,23 @@ public class BookService {
 
     // update book by id
 
-    public void updateBookById(String id, Book book) {
+    public void updateBookById(String id) {
         Book found = findById(id);
         if (found == null) {
             throw new BookNotFoundException("Book not found with id " + id);
         }
+        System.out.print("Enter book id : ");
+        String bookId = scanner.nextLine();
+        System.out.print("Enter book title : ");
+        String title = scanner.nextLine();
+        System.out.print("Enter author id : ");
+        String authorId = scanner.nextLine();
+        System.out.print("Enter author first name : ");
+        String firstName = scanner.nextLine();
+        System.out.print("Enter author last name : ");
+        String lastName = scanner.nextLine();
+        Author author = new Author(authorId, firstName, lastName);
+        Book book = new Book(bookId, title, author);
         bookMap.put(id, book);
     }
     // delete book by id

@@ -1,5 +1,6 @@
 package com.madeeasy.using.map;
 
+import com.madeeasy.using.map.exception.BookNotFoundException;
 import com.madeeasy.using.map.service.BookService;
 
 import java.util.InputMismatchException;
@@ -25,6 +26,7 @@ public class Main {
             while (true) {
                 try {
                     choice = scanner.nextInt();
+                    scanner.nextLine();
                     break;
                 } catch (InputMismatchException e) {
                     System.out.println("Sorry you have to enter a number !!");
@@ -37,6 +39,15 @@ public class Main {
                 case 1:
                     bookService.createNewBook();
                     break;
+                case 2:
+                    System.out.print("Enter book id to update : ");
+                    String id = scanner.nextLine();
+                    try {
+                        bookService.updateBookById(id);
+                    } catch (BookNotFoundException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
                 case 5:
                     bookService.displayAllBooks();
                     break;
@@ -46,7 +57,6 @@ public class Main {
                 default:
                     System.out.println("Please enter a valid choice !!");
             }
-            scanner.nextLine();
         }
     }
 }
