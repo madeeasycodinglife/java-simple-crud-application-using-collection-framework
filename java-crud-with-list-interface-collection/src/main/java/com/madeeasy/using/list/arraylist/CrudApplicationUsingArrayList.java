@@ -1,11 +1,10 @@
-package com.madeeasy.using.arraylist;
+package com.madeeasy.using.list.arraylist;
 
-import com.madeeasy.using.arraylist.model.Address;
-import com.madeeasy.using.arraylist.model.Student;
-import com.madeeasy.using.arraylist.service.impl.StudentServiceImpl;
+import com.madeeasy.using.list.arraylist.model.Address;
+import com.madeeasy.using.list.arraylist.model.Student;
+import com.madeeasy.using.list.arraylist.service.impl.StudentServiceImpl;
 
 import java.util.List;
-import java.util.UUID;
 
 public class CrudApplicationUsingArrayList {
 

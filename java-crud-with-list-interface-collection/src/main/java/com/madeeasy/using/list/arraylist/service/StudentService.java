@@ -1,6 +1,6 @@
-package com.madeeasy.using.arraylist.service;
+package com.madeeasy.using.list.arraylist.service;
 
-import com.madeeasy.using.arraylist.model.Student;
+import com.madeeasy.using.list.arraylist.model.Student;
 
 import java.util.List;
 

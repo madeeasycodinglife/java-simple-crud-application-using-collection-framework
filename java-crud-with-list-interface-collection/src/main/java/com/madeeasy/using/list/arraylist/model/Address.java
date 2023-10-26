@@ -1,4 +1,4 @@
-package com.madeeasy.using.arraylist.model;
+package com.madeeasy.using.list.arraylist.model;
 
 public class Address {
     private String villageName;

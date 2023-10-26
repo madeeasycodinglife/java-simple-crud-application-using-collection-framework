@@ -1,7 +1,7 @@
-package com.madeeasy.using.arraylist.repository.impl;
+package com.madeeasy.using.list.arraylist.repository.impl;
 
-import com.madeeasy.using.arraylist.model.Student;
-import com.madeeasy.using.arraylist.repository.StudentRepository;
+import com.madeeasy.using.list.arraylist.model.Student;
+import com.madeeasy.using.list.arraylist.repository.StudentRepository;
 
 import java.util.ArrayList;
 import java.util.List;

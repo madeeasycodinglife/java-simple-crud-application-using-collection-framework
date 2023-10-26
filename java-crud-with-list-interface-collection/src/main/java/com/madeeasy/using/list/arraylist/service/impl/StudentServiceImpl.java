@@ -1,10 +1,9 @@
-package com.madeeasy.using.arraylist.service.impl;
+package com.madeeasy.using.list.arraylist.service.impl;
 
-import com.madeeasy.using.arraylist.model.Address;
-import com.madeeasy.using.arraylist.model.Student;
-import com.madeeasy.using.arraylist.repository.StudentRepository;
-import com.madeeasy.using.arraylist.repository.impl.StudentRepositoryImpl;
-import com.madeeasy.using.arraylist.service.StudentService;
+import com.madeeasy.using.list.arraylist.model.Student;
+import com.madeeasy.using.list.arraylist.repository.StudentRepository;
+import com.madeeasy.using.list.arraylist.repository.impl.StudentRepositoryImpl;
+import com.madeeasy.using.list.arraylist.service.StudentService;
 
 import java.util.List;
 
