@@ -16,10 +16,9 @@ public class Main {
             System.out.println("1. Create new book");
             System.out.println("2. Update book by id");
             System.out.println("3. Delete book by id");
-            System.out.println("4. Get book by id");
+            System.out.println("4. Display book by id");
             System.out.println("5. Display all books");
-            System.out.println("6. Display book by id");
-            System.out.println("7. Exit");
+            System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
             int choice = 0;
 
@@ -48,10 +47,28 @@ public class Main {
                         System.out.println(e.getMessage());
                     }
                     break;
+                case 3:
+                    System.out.print("Enter book id to delete : ");
+                    String idToDelete = scanner.nextLine();
+                    try {
+                        bookService.deleteBookById(idToDelete);
+                    } catch (BookNotFoundException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
+                case 4:
+                    System.out.print("Enter book id to get : ");
+                    String idToGet = scanner.nextLine();
+                    try {
+                        bookService.displayBookById(idToGet);
+                    } catch (BookNotFoundException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
                 case 5:
                     bookService.displayAllBooks();
                     break;
-                case 7:
+                case 6:
                     System.out.println("Thanks for using this application !!");
                     return;
                 default:

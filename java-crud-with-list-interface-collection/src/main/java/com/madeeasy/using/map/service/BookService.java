@@ -86,7 +86,7 @@ public class BookService {
         // with key and value
         if (!bookMap.isEmpty()) {
             for (Map.Entry<String, Book> entry : bookMap.entrySet()) {
-                System.out.println(entry.getKey() + " - " + entry.getValue());
+                System.out.println("Key : " + entry.getKey() + " - " + "value : " + entry.getValue());
             }
         } else {
             System.out.println("Sorry! BookMap is empty");
